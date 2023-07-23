@@ -3,7 +3,7 @@ from os.path import exists
 class CSV_Engine:
 	
 	# FILE_CSV_PATH = "data.csv"
-	FILE_CSV_PATH = "savnw.csv"
+	FILE_CSV_PATH = "savnw2_update.csv"
 
 	MODE_READ_FILE = "r"
 	MODE_WRITE_FILE = "w"
@@ -222,7 +222,7 @@ class CSV_Engine:
 if __name__ == '__main__':
 	csv_object = CSV_Engine(CSV_Engine.FILE_CSV_PATH)
 	csv_object.import_csv()
-	# print(csv_object.data)
+	print(csv_object.data)
 	csv_object.export_csv("export_file.csv")
 	# from data_export_test import data
 	# csv_object1 = CSV_Engine(CSV_Engine.FILE_CSV_PATH)
